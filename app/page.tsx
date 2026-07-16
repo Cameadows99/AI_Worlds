@@ -45,7 +45,7 @@ export default function Home() {
         <input
           value={prompt}
           onChange={(e) => setPrompt(e.target.value)}
-          placeholder="I want to be a queen today..."
+          placeholder="I want to be a commander of the seven seas with a trusty crew..."
           className="w-full border rounded p-3"
         />
 
