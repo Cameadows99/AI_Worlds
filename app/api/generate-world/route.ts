@@ -6,38 +6,37 @@ const openai = new OpenAI({
 });
 
 const mockWorld = {
-  worldName: "Kingdom of Aurelia",
-  theme: "Fantasy Castle",
-  scene: "Royal Throne Room",
-  backgroundPrompt: "A grand fantasy throne room with stained glass windows",
+  worldName: "The Dead Breeze",
+  theme: "Windless Seas",
+  scene: "Tip of the deck",
+  backgroundPrompt: "Modest and trusty, fine wooded ship",
 
   characters: [
     {
-      name: "Liondia",
+      name: "Glindarious",
 
-      role: "Queen",
+      role: "Reporter",
 
       personality: "Calm, intelligent and diplomatic.",
 
-      appearance: "Long silver hair and emerald robes.",
+      appearance: "Scraggly, stern, and wise.",
 
-      goal: "Prevent another war while protecting her people.",
+      goal: "Prevent needless fighting.",
     },
     {
       name: "Grub",
 
-      role: "Royal Cook",
+      role: "Scummy Cook",
 
-      personality: "Cheerful, loud, always hungry.",
+      personality: "Cheerful, loud, ignorant.",
 
-      appearance: "Short with flour-covered clothes.",
+      appearance: "Hodge podge of warts.",
 
-      goal: "Prepare the greatest feast in the kingdom.",
+      goal: "Prepare the greatest feast in the kingdom of the Seas.",
     },
   ],
 
-  openingMessage:
-    "Your Majesty, the treasury has mysteriously vanished overnight.",
+  openingMessage: "The ocean is ripe for adventure.",
 };
 
 export async function POST(request: Request) {
